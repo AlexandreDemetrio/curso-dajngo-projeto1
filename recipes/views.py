@@ -5,10 +5,21 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(request):
-    return HttpResponse('EU AMO A JESSICA')
+    return HttpResponse('''<!DOCTYPE>
+    <html>
+    <head><title>Olá mundo</title></head>
+                        
+    <body>
+    <h1>Olá Mundo!</h1>
+    
+    </body>
+    </html>
+
+
+''')
 
 def contato(request):
-    return HttpResponse('<3')
+    return HttpResponse('CONTATO')
 
 def sobre(request):
-    return HttpResponse('EU AMO MUITO A JESSICA')
+    return HttpResponse('SOBRE')
